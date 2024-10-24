@@ -1,12 +1,12 @@
 {
   "name": "personal",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio Website",
   "main": "main.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "main.html"
   },
-  "author": "",
+  "author": "Lefu Mofokeng",
   "license": "ISC"
 }
