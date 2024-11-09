@@ -16,7 +16,17 @@ body {
     color: purple;
     display: flex;
     justify-content: center;
-    align-iteam: center;
+}
+
+.contact-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: purple;
+    display: flex;
+    padding-left: 100px;
+    margin-left: 140px;
+    margin-top: 60px;
+    padding-top: 40px;
 }
 
 .headingMe{
@@ -25,22 +35,11 @@ body {
     color: purple;
     display: flex;
     justify-content: left;
-    align-iteam: left;
-}
-
-#home{
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-iteam: center;
 }
 
 .content{
     display: flex;
     justify-content: space-between;
-    align-iteam: center
 }
 
 .lefttext{
@@ -85,7 +84,8 @@ body {
     cursor: pointer; 
     font-family: arial;
     &:hover {
-        background-color: #282828; 
+        color: purple;
+        background-color: white; 
     }
 }
 
@@ -93,18 +93,73 @@ body {
     color: purple; 
 }
 
+.email-icon {
+    padding-top: 15px; 
+}
+
+.contact-me{
+    display: flex;
+}
+
 .contact-icon{
-    text-align: center;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.phone{
+    padding-top: 10px; 
+}
+
 .phone:hover {
     color: purple; 
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    padding-right: 10px;
+    margin-right: 120px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.form-group{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+    border-color: purple;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 15px;
+}
 
 .skill{
     font-size: 18px;
@@ -221,8 +276,6 @@ html {
     width: 50px; 
     border-radius: 50%;
     border: 2px solid purple;
-    justify-content: center;
-    align-iteam: center;
     gap: 50px; 
     margin-top: 30px; 
     &:hover {
@@ -258,18 +311,55 @@ html {
 
 .h2Education{
     font-size: 2.5rem;
-    align-iteam: center;
     justify-content: center;
     display: flex;
 }
 
+.contact-left{
+    padding-left: 100px;
+    padding-top: 20px;
+    margin-left: 140px;
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 #education{
     height: 100vh;
+    width: 100%;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: Arial, sans-serif;
+}
+
+#about{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .names{
