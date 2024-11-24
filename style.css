@@ -248,9 +248,7 @@ textarea {
 
 html {
     scroll-behavior: smooth;
-    height: 100vh;
 }
-
 
 .Right{
     flex: 3;
@@ -271,6 +269,16 @@ html {
     position: relative;
 }
 
+.leftcontact{
+    flex: 4;
+    position: relative;
+}
+
+.rightcontact{
+    flex: 3;
+    position: relative;
+}
+
 .image{
     height: 50px; 
     width: 50px; 
@@ -282,7 +290,6 @@ html {
         background-color: black; 
         transform: scale(1.1);
     }
-   
 }
 
 .aboutme{
@@ -322,27 +329,29 @@ html {
     width: 100%;
     scroll-snap-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    scroll-margin-top: 110px;
 }
 
 #education{
     height: 100vh;
-    width: 100%;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    color: #fff;
     font-family: Arial, sans-serif;
+    scroll-margin-top: 100px;
 }
 
 #about{
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    
+    scroll-margin-top: 180px;
 }
 
 #skills{
@@ -351,6 +360,7 @@ html {
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 100px;
 }
 
 #contact{
@@ -359,6 +369,7 @@ html {
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 90px;
 }
 
 .names{
@@ -411,7 +422,6 @@ header {
     top: 0;
     z-index: 30;
     padding: 10px;
-    
 }
 
 nav ul {
@@ -456,6 +466,21 @@ nav ul li a {
     }
 }
 
-main {
-    padding: 20px;
+
+@media (max-width: 1250px) {
+    .left{
+        display: none;
+    }
+
+    .right{
+        grid-template-columns: 1fr;
+    }
+
+    .Right{
+        grid-template-columns: 1fr;
+    }
+
+    .Left{
+        display: -ms-grid;
+    }
 }
